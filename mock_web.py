@@ -192,6 +192,10 @@ def search():
         re= cur.fetchall()
         conn.close()
         key = ('id','status','title', 'reqparams', 'methods', 'domain', 'description', 'resparams','updateTime')
+        # dxx = []
+        # for value in re:
+        #     xx = dict(zip(key, value)) 
+        #     dxx.add(xx)
         d = [dict(zip(key, value)) for value in re]
     except:
         return jsonify({'msg': "fail", "remark": "select data fail"})
