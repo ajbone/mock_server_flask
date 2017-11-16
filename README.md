@@ -29,7 +29,9 @@ flask,pymysql,xlrd,flask_restful,flask_cors
 
 ## Example:
 curl --request POST  --url 'http://127.0.0.1:8089/server/login?username=qa&passwd=123456'
+
 curl --request GET   --url 'http://127.0.0.1:8089/v1/callback?params=qatest'
+
 curl --request POST --url http://127.0.0.1:8089/auth/bankCardVerified  --header 'content-type: application/json'  --data '{ "transType":"300002", "appid":"123456" }'
 
 ## 相关说明
