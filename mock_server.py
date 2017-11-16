@@ -10,7 +10,6 @@ app = Flask(__name__)
 cf = ConfigParser.ConfigParser()
 path = 'db.config'
 cf.read(path)
-cf.read(path)
 secs = cf.sections()
 _host= cf.get("database","dbhost")
 _port= cf.get("database","dbport")
